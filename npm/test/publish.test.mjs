@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { mkdtemp, writeFile, rm } from 'node:fs/promises';
+import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
@@ -50,4 +50,15 @@ test('publish verifier rejects prerelease and unsafe tags before opening assets'
   for (const tag of ['v0.1.0-beta.1', '../../x', '0.1.0', 'v1.0.0; echo x']) {
     await assert.rejects(verifyPublish(tag, 'unused', () => assert.fail('Must not read assets')));
   }
+});
+
+test('publish workflow uses an explicit local tarball and guards manual retries', async () => {
+  const workflow = await readFile(new URL('../../.github/workflows/npm-publish.yml', import.meta.url), 'utf8');
+  assert.ok(workflow.includes('npm publish "./dist/sakiphan-yargitay-mcp-${RELEASE_TAG#v}.tgz"'));
+  assert.ok(!workflow.includes('npm publish "dist/'));
+  assert.ok(workflow.includes('workflow_dispatch:'));
+  assert.ok(workflow.includes("github.ref == 'refs/heads/main'"));
+  assert.ok(workflow.includes('r.isDraft!==false || r.isPrerelease!==false'));
+  assert.ok(workflow.indexOf('Require an existing published stable release') < workflow.indexOf('Download the published release'));
+  assert.ok(workflow.indexOf('Verify package identity and all six binary hashes') < workflow.indexOf('Publish verified tarball'));
 });

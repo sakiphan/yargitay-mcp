@@ -2,18 +2,27 @@ name: Publish npm
 on:
   release:
     types: [published]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing published stable release to publish to npm
+        required: true
+        type: string
 permissions:
   contents: read
 concurrency:
-  group: npm-publish-${{ github.event.release.tag_name }}
+  group: npm-publish-${{ github.event.release.tag_name || inputs.release_tag }}
   cancel-in-progress: false
 jobs:
   publish:
-    if: github.repository == 'sakiphan/yargitay-mcp' && !github.event.release.prerelease && !github.event.release.draft
+    if: >-
+      github.repository == 'sakiphan/yargitay-mcp' &&
+      ((github.event_name == 'release' && !github.event.release.prerelease && !github.event.release.draft) ||
+       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      RELEASE_TAG: ${{ github.event.release.tag_name }}
+      RELEASE_TAG: ${{ github.event.release.tag_name || inputs.release_tag }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -24,6 +33,13 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Validate stable release tag
         run: node -e 'if (!/^v\d+\.\d+\.\d+$/.test(process.env.RELEASE_TAG)) process.exit(1)'
+      - name: Require an existing published stable release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
+            --json tagName,isDraft,isPrerelease > release-status.json
+          node -e 'const r=require("./release-status.json"); if(r.tagName!==process.env.RELEASE_TAG || r.isDraft!==false || r.isPrerelease!==false) process.exit(1)'
       - name: Download the published release without rebuilding
         env:
           GH_TOKEN: ${{ github.token }}
@@ -41,5 +57,5 @@ jobs:
             echo '::error::Add a repository Actions secret named NPM_TOKEN with npm publish permission.'
             exit 1
           fi
-          npm publish "dist/sakiphan-yargitay-mcp-${RELEASE_TAG#v}.tgz" \
+          npm publish "./dist/sakiphan-yargitay-mcp-${RELEASE_TAG#v}.tgz" \
             --access public --ignore-scripts --registry=https://registry.npmjs.org
