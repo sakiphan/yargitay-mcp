@@ -22,10 +22,11 @@ için hukuki uygunluk veya eksiksiz araştırma garantisi verilmez.
 
 ## Kurulum
 
-**Paket yayın durumu:** Kaynak koddan derleme desteklenir; hazır GitHub release
-ve npm paketi henüz yayımlanmadı.
-`npx` komutları hem GitHub `v0.3.1` release'i hem de `sakiphan-yargitay-mcp`
-npm paketi yayımlandıktan sonra çalışır. Yayın öncesinde kaynaktan derleyin.
+**Paket yayın durumu:** [GitHub v0.3.1 release'i](https://github.com/sakiphan/yargitay-mcp/releases/tag/v0.3.1)
+ve [sakiphan-yargitay-mcp npm paketi](https://www.npmjs.com/package/sakiphan-yargitay-mcp)
+13 Eylül 2026 tarihinde yayımlandı. npm `latest` sürümü `0.3.1` olarak doğrulandı;
+temiz geçici önbellekten npm paketi ve macOS arm64 binary indirmesi ile `doctor`
+çalıştırması başarılı oldu. Kaynak koddan derleme de desteklenir.
 
 ### Tek komutla MCP kaydı (npm)
 
@@ -80,7 +81,7 @@ GitHub'a bağlanır; karar isteklerini yine Go çekirdeği resmî kaynağa gönd
 
 ### Node.js gerektirmeyen alternatif
 
-Aşağıdaki kurucular yalnızca GitHub release'i yayımlandıktan sonra çalışır.
+Aşağıdaki kurucular yayımlanmış GitHub release dosyalarını kullanır.
 
 macOS / Linux — kurucuyu inceleyebilirsiniz: [scripts/install.sh](scripts/install.sh).
 `codex` yerine `claude`, `claude-desktop` veya `gemini` seçilebilir:
@@ -379,6 +380,11 @@ Token sadece son `npm publish` adımında `NODE_AUTH_TOKEN` olarak verilir; publ
 `--ignore-scripts` ile çalışır. GitHub token'ının yetkisi publish işinde salt okumadır.
 Secret eksik veya yetkisizse iş hata verir; GitHub release'i geri alınmaz. Secret'ı
 düzelttikten sonra Actions üzerinden başarısız işi yeniden çalıştırabilirsiniz.
+Workflow kodu düzeltildiyse eski işi yeniden çalıştırmak yerine **Actions → Publish npm
+→ Run workflow** yoluyla `main` dalını ve `release_tag=v0.3.1` gibi mevcut sürümü
+seçin. Bu yol yalnız yayımlanmış, taslak/prerelease olmayan release'i kabul eder;
+aynı tarball ve altı binary tekrar doğrulanır, yeniden derlenmez. npm'de zaten
+yayımlanmış bir sürümün üzerine yazılmaz; bu yol henüz yayımlanmamış paketler içindir.
 GitHub `GITHUB_TOKEN` ile üretilen olaylar yeni workflow'ları tetiklemeyebilir;
 bu yüzden mevcut akış taslak release'in insan tarafından yayımlanmasını bekler.
 
