@@ -22,11 +22,11 @@ için hukuki uygunluk veya eksiksiz araştırma garantisi verilmez.
 
 ## Kurulum
 
-**Paket yayın durumu:** [GitHub v0.3.1 release'i](https://github.com/sakiphan/yargitay-mcp/releases/tag/v0.3.1)
-ve [sakiphan-yargitay-mcp npm paketi](https://www.npmjs.com/package/sakiphan-yargitay-mcp)
-13 Eylül 2026 tarihinde yayımlandı. npm `latest` sürümü `0.3.1` olarak doğrulandı;
-temiz geçici önbellekten npm paketi ve macOS arm64 binary indirmesi ile `doctor`
-çalıştırması başarılı oldu. Kaynak koddan derleme de desteklenir.
+**Kaynak ağacı sürümü: 0.3.2.** Yayımlanan binary ve paketleri
+[GitHub Releases](https://github.com/sakiphan/yargitay-mcp/releases) ve
+[sakiphan-yargitay-mcp npm sayfasından](https://www.npmjs.com/package/sakiphan-yargitay-mcp)
+kontrol edebilirsiniz. Kaynak koddan derleme de desteklenir. npm üzerinden
+güncellemede sabitlenmiş eski sürüm numarasını değiştirmeyi unutmayın.
 
 ### Tek komutla MCP kaydı (npm)
 
@@ -60,7 +60,7 @@ Node.js ve `npx`, istemcinin PATH'inde bulunmalı; GUI uygulamalarında gerekirs
 `npx` için mutlak yol kullanın. Kurulumdan sonra istemcinizi yeniden başlatın.
 İlk çalıştırma binary indirir; istemcinin başlangıç süresi kısa ise önce terminalde
 `npx -y sakiphan-yargitay-mcp doctor` çalıştırarak önbelleği hazırlayın.
-Sürümü sabitlemek için paket adını `sakiphan-yargitay-mcp@0.3.1` yapın.
+Sürümü sabitlemek için paket adını `sakiphan-yargitay-mcp@0.3.2` yapın.
 Görüntüleyici istenirse komutun sonuna `serve --viewer` ekleyin.
 
 Başlatıcı macOS/Linux/Windows için x64 veya arm64 binary'sini **paketle aynı
@@ -87,13 +87,13 @@ macOS / Linux — kurucuyu inceleyebilirsiniz: [scripts/install.sh](scripts/inst
 `codex` yerine `claude`, `claude-desktop` veya `gemini` seçilebilir:
 
 ```sh
-curl --proto '=https' --tlsv1.2 -fsSL https://raw.githubusercontent.com/sakiphan/yargitay-mcp/v0.3.1/scripts/install.sh | sh -s -- --client codex
+curl --proto '=https' --tlsv1.2 -fsSL https://raw.githubusercontent.com/sakiphan/yargitay-mcp/v0.3.2/scripts/install.sh | sh -s -- --client codex
 ```
 
 Windows PowerShell — [scripts/install.ps1](scripts/install.ps1):
 
 ```powershell
-& ([scriptblock]::Create((Invoke-WebRequest https://raw.githubusercontent.com/sakiphan/yargitay-mcp/v0.3.1/scripts/install.ps1).Content)) -Client codex
+& ([scriptblock]::Create((Invoke-WebRequest https://raw.githubusercontent.com/sakiphan/yargitay-mcp/v0.3.2/scripts/install.ps1).Content)) -Client codex
 ```
 
 Kurucu ilgili işletim sistemi/işlemci binary'sini ve SHA-256 listesini aynı release'den
@@ -235,6 +235,15 @@ Markdown bağlantı/görselleri etkinleştirmeyen kaçışlanmış paragraf metn
 
 ## İstemci yanıtı
 
+**0.3.2 — kapsamlı Yargıtay araması.**
+İlk uygun kararda durma ve üç aday tavanı kaldırıldı; normal başlangıç 10 adaydır.
+Açık “tümünü / ne kadar varsa” isteğinde istemci, seçili Yargıtay sorgusunun
+sayfalarını sırayla ve sayfa başına en fazla 20 adayla inceler. Kaynak toplamı,
+benzersiz adaylar, incelenenler ve uygun bulunanlar ayrı raporlanır. Konu/özel ad
+taraması somut hukuki soruya emsal aramasından ayrılır. Hata veya kesintide kalan
+kapsam ve devam noktası bildirilir; tüm arşivdeki bütün ilgili kararlar garanti
+edilmez. Backend crawler veya ek AI API'si yoktur.
+
 **0.3.1: Sorudan arama planı.** Mevcut istemci modeli hukuki mesele ve kullanıcı
 olgularını ayırır; genel konu kelimesi yerine ayırt edici doğal ifade seçer.
 Desteklenmeyen koşulları filtre diye göndermek yerine karar metninde doğrular.
@@ -328,7 +337,7 @@ go mod verify
 gofmt -w cmd internal scripts/notices
 go vet ./...
 GOPROXY=off go test -race -cover ./...
-sh scripts/release.sh v0.3.1
+sh scripts/release.sh v0.3.2
 npm ci --ignore-scripts
 npm run check
 npm test
@@ -381,7 +390,7 @@ Token sadece son `npm publish` adımında `NODE_AUTH_TOKEN` olarak verilir; publ
 Secret eksik veya yetkisizse iş hata verir; GitHub release'i geri alınmaz. Secret'ı
 düzelttikten sonra Actions üzerinden başarısız işi yeniden çalıştırabilirsiniz.
 Workflow kodu düzeltildiyse eski işi yeniden çalıştırmak yerine **Actions → Publish npm
-→ Run workflow** yoluyla `main` dalını ve `release_tag=v0.3.1` gibi mevcut sürümü
+→ Run workflow** yoluyla `main` dalını ve `release_tag=v0.3.2` gibi mevcut sürümü
 seçin. Bu yol yalnız yayımlanmış, taslak/prerelease olmayan release'i kabul eder;
 aynı tarball ve altı binary tekrar doğrulanır, yeniden derlenmez. npm'de zaten
 yayımlanmış bir sürümün üzerine yazılmaz; bu yol henüz yayımlanmamış paketler içindir.

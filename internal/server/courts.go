@@ -38,7 +38,7 @@ func AddCourtTools(s *mcp.Server, sources []CourtSource, view func(string, strin
 			props["language"] = enum("ENG", "FRE", "TUR")
 		}
 		annotations := &mcp.ToolAnnotations{ReadOnlyHint: true, DestructiveHint: boolPtr(false), IdempotentHint: true, OpenWorldHint: boolPtr(true)}
-		mcp.AddTool(s, &mcp.Tool{Name: "search_" + name + "_decisions", Description: descriptions[name] + " query sade metindir; otomatik tırnaklanır. Danıştay required_phrases ek kavramları VE koşuluyla daraltır; diğer kaynaklarda desteklenmez. relevance_checked=false. Otomatik sayfalama yok." + searchReviewInstructions, InputSchema: objectSchema(props, "query"), Annotations: annotations}, func(ctx context.Context, _ *mcp.CallToolRequest, r courts.SearchRequest) (*mcp.CallToolResult, courts.SearchResponse, error) {
+		mcp.AddTool(s, &mcp.Tool{Name: "search_" + name + "_decisions", Description: descriptions[name] + " query sade metindir; otomatik tırnaklanır. Danıştay required_phrases ek kavramları VE koşuluyla daraltır; diğer kaynaklarda desteklenmez. relevance_checked=false. Bu kaynakta otomatik sayfalama yok." + searchReviewInstructions, InputSchema: objectSchema(props, "query"), Annotations: annotations}, func(ctx context.Context, _ *mcp.CallToolRequest, r courts.SearchRequest) (*mcp.CallToolResult, courts.SearchResponse, error) {
 			out, e := c.Search(ctx, r)
 			if e == nil {
 				out.Review = yargitay.PendingRelevanceReview(false)

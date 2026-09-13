@@ -8,7 +8,9 @@ mevcut istemcinin veri işleme koşulları ve token kullanımı ayrıca geçerli
 ## İstemciye verilen akış
 
 1. Somut hukuki soru, maddi olay ve uygulanacak rejimi belirle.
-2. Tek sayfadan en fazla üç adayla başla; otomatik sayfalama/tarama yapma.
+2. Normal ilk sayfada 10 adayla başla; ilk uygun kararda durma. Kullanıcının açık
+   Yargıtay tümü/devam isteğinde [sayfalama kurallarını](QUERY_PLANNING.md) uygula.
+   Sabit üç aday tavanı yoktur; kaynak ve şema sınırları korunur.
 3. Her adayın tam metnini gerekirse aynı hash/formatla parçalar halinde oku.
 4. Aynı hukuki soru, uyumlu maddi olay/rejim, mahkemenin kendi gerekçesi, nihai
    hüküm/usul aşaması ve her sonuç için somut metin desteğini karşılaştır.
@@ -22,6 +24,12 @@ mevcut istemcinin veri işleme koşulları ve token kullanımı ayrıca geçerli
 
 Kullanıcı özellikle hata analizi veya ham arama adaylarını isterse elenen adaylar
 uygunsuzluk durumu açıkça belirtilerek incelenebilir; emsal gibi sunulmaz.
+
+Konu/oyun/özel ad taraması, somut hukuki soruya emsal aramasından ayrıdır. Konunun
+uyuşmazlıkla gerçek ilişkisi tam metinden doğrulanır; kullanıcı vermediği ortak
+bir hukuki mesele icat edilerek farklı suç/talep türleri elenmez. `required_checks`
+içindeki emsal ölçütleri somut emsal iddiası içindir. Konuyla ilgili bir kararı
+bulmak, kullanıcının davasına uygun emsal olduğunu kanıtlamaz.
 
 ## Sözleşme ve sınırlar
 

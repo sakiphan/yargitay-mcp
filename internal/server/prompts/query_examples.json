@@ -6,13 +6,13 @@
       "query": "imzalı ücret bordroları",
       "unit": "9. Hukuk Dairesi",
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "alternative": {
       "query": "ihtirazi kayıt",
       "unit": "9. Hukuk Dairesi",
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "verify_in_text": [
       "Bordro imzalı mı?",
@@ -30,7 +30,7 @@
         "takdir komisyonuna"
       ],
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "alternative": {
       "query": "zamanaşımının durması",
@@ -38,7 +38,7 @@
         "takdir komisyonuna"
       ],
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "verify_in_text": [
       "Tarh zamanaşımı mı?",
@@ -53,13 +53,13 @@
       "query": "sosyal medya paylaşımları nedeniyle",
       "decision_type": "individual_application",
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "alternative": {
       "query": "disiplin cezasıyla cezalandırılması",
       "decision_type": "individual_application",
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "verify_in_text": [
       "Kamu görevlisi statüsü",
@@ -76,14 +76,14 @@
       "language": "ENG",
       "decision_type": "judgments",
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "alternative": {
       "query": "first police interview",
       "language": "ENG",
       "decision_type": "judgments",
       "page": 1,
-      "page_size": 2
+      "page_size": 10
     },
     "verify_in_text": [
       "İlk polis sorgusu",

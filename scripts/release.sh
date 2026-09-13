@@ -1,7 +1,7 @@
 #!/bin/sh
 # SPDX-License-Identifier: AGPL-3.0-only
 set -eu
-version=${1:-v0.3.1}
+version=${1:-v0.3.2}
 printf '%s' "$version" | LC_ALL=C grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$' || exit 2
 commit=unknown
 if resolved_commit=$(git rev-parse --verify HEAD 2>/dev/null); then

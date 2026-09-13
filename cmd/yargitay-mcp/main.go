@@ -11,7 +11,7 @@ import (
 )
 
 // Kept in main so existing release -ldflags remain compatible.
-var version = "0.3.1-dev"
+var version = "0.3.2-dev"
 var commit = "unknown"
 
 func main() {

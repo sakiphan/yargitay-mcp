@@ -3,12 +3,12 @@
 set -eu
 
 client=""
-version="v0.3.1"
+version="v0.3.2"
 while [ "$#" -gt 0 ]; do
   case "$1" in
     --client) [ "$#" -ge 2 ] || exit 2; client=$2; shift 2 ;;
     --version) [ "$#" -ge 2 ] || exit 2; version=$2; shift 2 ;;
-    *) echo "Kullanım: install.sh --client codex|claude|claude-desktop|gemini [--version v0.3.1]" >&2; exit 2 ;;
+    *) echo "Kullanım: install.sh --client codex|claude|claude-desktop|gemini [--version v0.3.2]" >&2; exit 2 ;;
   esac
 done
 case "$client" in codex|claude|claude-desktop|gemini) ;; *) echo "--client seçilmeli." >&2; exit 2 ;; esac

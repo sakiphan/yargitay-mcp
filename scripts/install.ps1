@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 param(
   [Parameter(Mandatory=$true)][ValidateSet('codex','claude','claude-desktop','gemini')][string]$Client,
-  [ValidatePattern('^v\d+\.\d+\.\d+$')][string]$Version = 'v0.3.1'
+  [ValidatePattern('^v\d+\.\d+\.\d+$')][string]$Version = 'v0.3.2'
 )
 $ErrorActionPreference = 'Stop'
 $platformArch = [System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture.ToString().ToLowerInvariant()

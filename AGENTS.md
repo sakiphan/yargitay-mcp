@@ -4,7 +4,7 @@
 - Scope: Yargıtay, AYM (individual applications and norm review), Danıştay and AİHM/HUDOC. Nine MCP tools; no BAM.
 - All Yargıtay HTTP requests, including probes, belong in `internal/yargitay/client.go`.
 - Fixed origins only: https://karararama.yargitay.gov.tr, https://kararlarbilgibankasi.anayasa.gov.tr, https://karararama.danistay.gov.tr, https://hudoc.echr.coe.int. TLS verification stays enabled; redirects disabled. All HTTP access is in internal/yargitay/client.go; adapters are in internal/courts. Never bypass CAPTCHA or authentication.
-- No bulk crawling or automatic pagination. Page size defaults to 10 and cannot exceed 20.
+- No backend crawling or automatic pagination. Explicit user requests for all Yargıtay matches may use sequential, client-controlled page calls within the requested topic and unchanged filters; never crawl the whole archive or evade source/schema limits. Page size defaults to 10 and cannot exceed 20. Preserve deduplication, progress and incomplete-coverage reporting; other courts remain single-page by default.
 - Every upstream attempt uses one process-wide queue: concurrency 1, at least 3 seconds between starts.
 - One process/replica. Separate local MCP processes do not share the limiter.
 - stdout belongs exclusively to MCP in serve mode. Never log queries, response bodies or secrets.

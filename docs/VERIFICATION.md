@@ -1,5 +1,21 @@
 # Doğrulama — 13 Eylül 2026
 
+## 0.3.2 — kapsamlı Yargıtay araması
+
+- İlk uygun sonuçta durma ve üç aday tavanı kaldırıldı; normal başlangıç 10 aday.
+- Açık Yargıtay tümü isteğinde, değişmeyen sorgu/filtrelerle istemci kontrollü
+  sayfalama talimatı eklendi. Sayfa üst sınırı 20, sayfa numarası üst sınırı 1000
+  ve ortak hız sınırı korundu. Backend crawler eklenmedi.
+- Konu taraması ile somut emsal değerlendirmesi ayrıldı; yazım alternatifleri,
+  tekilleştirme, eksik kapsam ve konuşmada devam noktası talimatları eklendi.
+- Yerel gofmt, vet, çevrimdışı Go/race ve 19 npm testi geçti. Sentetik MCP testi
+  20/1/0 kayıtlık açık sayfa çağrılarını, dörtten az olmayan belge erişimini,
+  şema sınırını ve backend'in ek sayfa çağırmadığını kontrol etti.
+- Yerel geliştirme binary'siyle görüntüleyici açık stdio başlangıcı, yeni talimatlar,
+  dokuz araç, 51 birim ve temiz kapanış doğrulandı.
+- Bu kontroller modelin talimatlara uyacağını veya gerçek aramada bütün ilgili
+  kararların bulunacağını kanıtlamaz. Canlı kapsam/eksiksizlik ölçümü yapılmadı.
+
 ## 0.3.1 — sorudan arama planı
 
 [Arama planlama sözleşmesi](QUERY_PLANNING.md), mevcut istemci modeline ayırt
