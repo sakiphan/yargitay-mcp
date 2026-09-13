@@ -1,0 +1,41 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  release:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.26.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check npm version matches release tag
+        run: node -e 'if ("v" + require("./package.json").version !== process.env.RELEASE_TAG) process.exit(1)'
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+      - run: npm ci --ignore-scripts && npm run check && npm test
+      - run: go mod download all && go mod verify
+      - run: go vet ./... && go test -race ./...
+        env:
+          GOPROXY: 'off'
+      - run: sh scripts/release.sh "$RELEASE_TAG"
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+      - run: npm pack --json --pack-destination dist > dist/npm-pack.json
+      - run: npm run verify:pack && npm run test:pack
+      - run: node npm/scripts/verify-publish.mjs "$RELEASE_TAG" dist
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+      - name: Create draft release with source and verified binaries
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: gh release create "$RELEASE_TAG" dist/yargitay-mcp_* dist/checksums.txt dist/release.json dist/LICENSE dist/NOTICE dist/THIRD_PARTY_NOTICES.txt dist/sakiphan-yargitay-mcp-*.tgz --verify-tag --draft --generate-notes
