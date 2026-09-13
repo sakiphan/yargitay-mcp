@@ -1,0 +1,22 @@
+{
+  "name": "sakiphan-yargitay-mcp",
+  "version": "0.3.1",
+  "description": "Yargıtay, AYM, Danıştay and ECHR/HUDOC MCP — verified native Go launcher",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "bin": { "sakiphan-yargitay-mcp": "npm/bin/cli.mjs" },
+  "engines": { "node": ">=20" },
+  "repository": { "type": "git", "url": "git+https://github.com/sakiphan/yargitay-mcp.git" },
+  "homepage": "https://github.com/sakiphan/yargitay-mcp#readme",
+  "bugs": { "url": "https://github.com/sakiphan/yargitay-mcp/issues" },
+  "keywords": ["mcp", "yargitay", "codex", "claude", "gemini", "law"],
+  "files": ["npm/bin/", "npm/lib/", "npm/release-manifest.json", "npm/THIRD_PARTY_NOTICES.txt", "LICENSE", "NOTICE", "third_party/Apache-2.0.txt", "README.md"],
+  "scripts": {
+    "test": "node --test npm/test/launcher.test.mjs npm/test/package.test.mjs npm/test/publish.test.mjs",
+    "check": "node --check npm/bin/cli.mjs && node --check npm/lib/launcher.mjs && node --check npm/scripts/prepare-package.mjs && node --check npm/scripts/verify-publish.mjs",
+    "prepack": "node npm/scripts/prepare-package.mjs",
+    "verify:pack": "node npm/scripts/verify-pack.mjs",
+    "test:pack": "node npm/scripts/smoke-pack.mjs"
+  },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" }
+}
