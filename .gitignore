@@ -1,0 +1,11 @@
+/dist/
+/yargitay-mcp
+/yargitay-mcp.exe
+*.test
+*.out
+.DS_Store
+.env
+/node_modules/
+*.tgz
+/npm/release-manifest.json
+/npm/THIRD_PARTY_NOTICES.txt

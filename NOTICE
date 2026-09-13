@@ -1,0 +1,16 @@
+Yargıtay MCP — Go implementation
+Copyright 2026 Yargıtay MCP contributors
+
+This independent project is not affiliated with or endorsed by Yargıtay Başkanlığı.
+This Go implementation is distributed under AGPL-3.0-only. The license applies to
+the software, not the court decisions obtained through it.
+
+Contracts, catalog and behavior were migrated from Açık Yargıtay MCP (Python),
+Copyright 2026 Açık Yargıtay MCP contributors, originally Apache-2.0.
+Its original license is preserved at third_party/Apache-2.0.txt.
+Form values in internal/yargitay/units.json were observed on 2026-09-09 at
+https://karararama.yargitay.gov.tr/. Present activity is not inferred.
+
+Dependencies retain their own licenses; go.mod/go.sum identify their versions.
+The official MCP Go SDK includes Apache-2.0 and MIT licensed contributions.
+See third_party/README.md for dependency notices.
