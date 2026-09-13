@@ -1,0 +1,23 @@
+SORUDAN ARAMA PLANI — mevcut istemci modeli
+Amaç, yalnız konu kelimesini içeren kayıtlar değil, somut soruya cevap verebilecek adaylar bulmaktır. Planı sen hazırlarsın; sunucu soruyu yeniden yazmaz, model/API çağırmaz ve planı otomatik yürütmez.
+
+Planın kısa alanları: hukuki_mesele; kullanıcının_verdiği_olgular; kaynak_ve_tür; ayırt_edici_ifade; sabit_filtreler; metinde_doğrulanacaklar; gerekirse_tek_alternatif. Bunlar düşünce zinciri talebi değildir; kullanıcıya yalnız aranan kavram ve kapsamı kısa bir cümleyle açıkla. Plan JSON'unu arama aracına gönderme; yalnız aracın şemasındaki alanları gönder.
+
+KAVRAM SEÇİMİ
+- Önce hakkın/işlemin adını, sonra ihtilafın özel yönünü ayır: 'fazla çalışma' bir konu; 'imzalı ücret bordroları' ispat sorusunu daraltabilen bir ifadedir. 'Sosyal medya' tek başına kamu görevlisinin disiplin cezasını anlatmaz. Geniş konu kelimesini, daha ayırt edici bir ifade varken ilk tercih yapma.
+- Tek bir doğal, metinde yan yana geçebilecek ifade seç; bütün kullanıcı sorusunu veya birbirinden kopuk anahtar kelimeleri query içine yığma. Sunucu query'yi bütünüyle tırnaklar; bu alan kelimelerin bağımsız VE araması değildir. Ham AND/OR/NOT, yıldız, iç tırnak veya arama motoruna özgü sözdizimi üretme.
+- Aynı kavramın farklı çekim/yazım biçimlerini veya yakın bir hukuk terimini yalnız olası alternatif olarak düşün; eşanlamlı olduğunu garanti etme. Kullanıcının vermediği imza, statü, daire, olay tarihi, kanun maddesi veya hukuki rejimi uydurma. 'Savunma alınmadan ceza' gibi esaslı kapsamı belirsiz soruda önce bunun disiplin yaptırımı mı ceza yargılaması mı olduğunu sor.
+- Kullanıcı açıkça belirli ifadeyi aratmışsa onu koru. Kimliği verilmiş kararın metni isteniyorsa yeniden konu araması yapma. Yalnız metadata araması istenmişse anahtar kelime ekleme. Örnekler kullanıcı kısıtlarının önüne geçmez.
+
+KAYNAĞA GÖRE PLAN
+- Yargıtay: tek query; katalogda bulunan ve kullanıcı tarafından belirtilmiş/onaylanmış birim ile desteklenen tarih/esas/karar filtreleri kullanılabilir. required_phrases desteklenmez. İşçi statüsü, bordro imzası/ihtirazi kayıt ve ispat biçimi gibi şemada olmayan koşulları metinde_doğrulanacaklar içinde tut; sunucu bunları filtreledi deme.
+- Danıştay: tek query yanında bağımsız kavramları required_phrases ile VE koşulu olarak gönder (en fazla 5 ek ifade, her biri 3–200 karakter; toplam 1000). 'Takdire sevk + zamanaşımı' yerine süreye etkiyi anlatan bir ifade ve takdir komisyonu kavramını birlikte düşün. Daire/tarih gibi desteklenmeyen alan ekleme. Kelime eşleşmesi hukuki uygunluk değildir.
+- AYM: tek query ve decision_type; bireysel başvuru ile norm denetimini karıştırma. required_phrases, personel_statüsü veya yaptırım_türü alanları yoktur. Kamu görevlisi/disiplin yaptırımı/ifade özgürlüğü koşullarını tümüyle metinde doğrula.
+- AİHM: seçilen belge dilinde doğal ifade kullan; örneğin ilk polis sorgusu için 'initial police questioning', alternatif 'first police interview'. Yalnız 'access to a lawyer' bütün avukatlık ilişkilerini getirebilir. language ve decision_type aynen korunsun; Türkçe isteyen kullanıcıya sessizce ENG araması yapma. Metinde ilk sorgu, avukat kısıtlaması, ifadenin delil olarak kullanımı ve nihai hakkaniyet incelemesini ayrı doğrula. required_phrases desteklenmez.
+
+SINIRLI DÜZELTME VE DURMA
+- Kullanıcı daha dar bir sınır vermemişse başlangıç page=1, page_size=2; bir hukuki soru için varsayılan en fazla 2 arama çağrısı (kaynaklar arasında toplam) ve en fazla 3 farklı adayın tam metin incelemesi planla. Kullanıcının daha düşük bütçesini koru. Bu, istemciye verilen bütçedir; sunucuda yeni bir global sayaç yoktur.
+- İlk arama başarılı olup sıfır aday veya incelenen adaylar açıkça alakasız çıkarsa, aynı mesele/olgular/kaynak/tür/dil ve kullanıcı filtreleri korunarak tek bir alternatif ifade kullanılabilir. Önce kısa biçimde ifade değişikliğini açıkla. İkinci aramayı sırf sonuç sayısını doldurmak için çalıştırma. İlk arama uygun kanıt sağladıysa dur.
+- Erişim hatası, zaman aşımı, CAPTCHA, 429 veya şema hatası nedeniyle alternatif sorgu/kaynak deneme; bu hataları 'sonuç yok' sayma. Filtreleri sessizce kaldırma. Otomatik sayfalama, daire/kaynak taraması ve toplu eşanlamlı sorgu üretme yoktur.
+- Aynı kaynak + belge kimliğini tekrar aday sayma; daha önce okunan aynı hash'li metni yeniden indirme. Tam metin okunmadan uygun emsal sunma. Çok uzun metinde okuma tamamlanamıyorsa bunu ilgisizlikten ayrı belirt; daha fazla inceleme için kullanıcıyla kapsamı netleştir.
+- Başarı, az ama gerekçe ve hükümle desteklenen uygun karardır. Arama planı veya ifadenin bulunması relevance_review.status=not_assessed durumunu hukuki onaya dönüştürmez; olumlu ve olumsuz hükümlerin ikisi de soruya uygun olabilir.

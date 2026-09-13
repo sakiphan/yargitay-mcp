@@ -1,0 +1,95 @@
+[
+  {
+    "source": "yargitay",
+    "question": "9. Hukuk Dairesinde imzalı, ihtirazi kayıtsız ve fazla çalışma tahakkuklu bordroyu aşan çalışmanın tanıkla ispatı hakkında karar ara.",
+    "primary": {
+      "query": "imzalı ücret bordroları",
+      "unit": "9. Hukuk Dairesi",
+      "page": 1,
+      "page_size": 2
+    },
+    "alternative": {
+      "query": "ihtirazi kayıt",
+      "unit": "9. Hukuk Dairesi",
+      "page": 1,
+      "page_size": 2
+    },
+    "verify_in_text": [
+      "Bordro imzalı mı?",
+      "İhtirazi kayıt yok mu?",
+      "Fazla çalışma tahakkuku var mı?",
+      "Bordroyu aşan miktarın ispatı mahkeme gerekçesi ve hükmünde incelenmiş mi?"
+    ]
+  },
+  {
+    "source": "danistay",
+    "question": "Takdir komisyonuna sevkin vergi tarh zamanaşımını durdurması ve sevkin amacı hakkında karar ara.",
+    "primary": {
+      "query": "zamanaşımını durdurmak",
+      "required_phrases": [
+        "takdir komisyonuna"
+      ],
+      "page": 1,
+      "page_size": 2
+    },
+    "alternative": {
+      "query": "zamanaşımının durması",
+      "required_phrases": [
+        "takdir komisyonuna"
+      ],
+      "page": 1,
+      "page_size": 2
+    },
+    "verify_in_text": [
+      "Tarh zamanaşımı mı?",
+      "Sevkin amacı ve süreye etkisi mi inceleniyor?",
+      "İfade yalnız mevzuat aktarımında değil, mahkemenin kendi gerekçesinde mi?"
+    ]
+  },
+  {
+    "source": "aym",
+    "question": "Kamu görevlisinin sosyal medya paylaşımı nedeniyle disiplin cezasının ifade özgürlüğüne uygunluğunu inceleyen bireysel başvuru ara.",
+    "primary": {
+      "query": "sosyal medya paylaşımları nedeniyle",
+      "decision_type": "individual_application",
+      "page": 1,
+      "page_size": 2
+    },
+    "alternative": {
+      "query": "disiplin cezasıyla cezalandırılması",
+      "decision_type": "individual_application",
+      "page": 1,
+      "page_size": 2
+    },
+    "verify_in_text": [
+      "Kamu görevlisi statüsü",
+      "Yaptırımın sosyal medya paylaşımına dayanması",
+      "Disiplin yaptırımı olması",
+      "İfade özgürlüğünün gereklilik ve ölçülülük yönünden esastan değerlendirilmesi"
+    ]
+  },
+  {
+    "source": "aihm",
+    "question": "İlk polis sorgusunda avukata erişim kısıtlamasıyla alınan ifadenin mahkûmiyette kullanılmasını inceleyen İngilizce AİHM hükümleri ara.",
+    "primary": {
+      "query": "initial police questioning",
+      "language": "ENG",
+      "decision_type": "judgments",
+      "page": 1,
+      "page_size": 2
+    },
+    "alternative": {
+      "query": "first police interview",
+      "language": "ENG",
+      "decision_type": "judgments",
+      "page": 1,
+      "page_size": 2
+    },
+    "verify_in_text": [
+      "İlk polis sorgusu",
+      "Avukata erişim kısıtlaması",
+      "İfadenin mahkûmiyette delil olarak kullanılması",
+      "Mahkemenin bütün yargılamanın hakkaniyetini incelemesi"
+    ]
+  }
+]
