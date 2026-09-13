@@ -1,0 +1,13 @@
+{
+  "kind": "predeclared_small_live_pilot",
+  "independent_gold_labels": false,
+  "automatic_pagination": false,
+  "max_searches": 4,
+  "max_distinct_documents": 8,
+  "questions": [
+    {"id":"L1","source":"yargitay","question":"İmzalı ve ihtirazi kayıtsız ücret bordrosunda fazla çalışma tahakkuku bulunan işçinin, bordroyu aşan fazla çalışmayı ispatında tanık anlatımı yeterli sayılıyor mu?","arguments":{"query":"fazla çalışma","unit":"9. Hukuk Dairesi","page_size":2},"criteria":"İmzalı/ihtirazi kayıtsız ve fazla çalışma tahakkuklu bordro, bordroyu aşan çalışma, ispat yöntemi mahkemenin gerekçe ve sonucunda değerlendirilmeli; yalnız genel fazla mesai hesabı yetmez."},
+    {"id":"L2","source":"danistay","question":"Takdir komisyonuna sevkin vergi tarh zamanaşımını durdurması ve bu sevkin amacının denetlenmesi hakkında karar var mı?","arguments":{"query":"takdir komisyonuna sevk","required_phrases":["zamanaşımı"],"page_size":2},"criteria":"Tarh zamanaşımına etkisi mevcut mahkemenin gerekçe/sonucunda değerlendirilmiş olmalı; sadece sevk olayının veya zamanaşımı kelimesinin geçmesi yeterli değil."},
+    {"id":"L3","source":"aym","question":"Kamu görevlisinin sosyal medya paylaşımı nedeniyle verilen disiplin cezasının ifade özgürlüğü bakımından gereklilik ve ölçülülüğünün değerlendirildiği bireysel başvuru var mı?","arguments":{"query":"sosyal medya","decision_type":"individual_application","page_size":2},"criteria":"Kamu görevlisi, disiplin yaptırımı ve ifade özgürlüğünün gereklilik/ölçülülük incelemesi aynı başvuruda bulunmalı; özel çalışan, yalnız tutukluluk veya salt usulden ret yeterli değil."},
+    {"id":"L4","source":"aihm","question":"İlk polis sorgusunda avukata erişimin sınırlandırılması nedeniyle alınan ifadenin mahkûmiyette kullanılmasının yargılamanın hakkaniyetine etkisini inceleyen AİHM kararı var mı?","arguments":{"query":"access to a lawyer","decision_type":"judgments","language":"ENG","page_size":2},"criteria":"İlk sorgu/avukata erişim kısıtlaması, bu ifadenin ceza yargılamasında kullanılması ve adil yargılama değerlendirmesi birlikte bulunmalı; yalnız ilk sorgu dışındaki avukat görüşmesi veya tali atıf yetmez."}
+  ]
+}

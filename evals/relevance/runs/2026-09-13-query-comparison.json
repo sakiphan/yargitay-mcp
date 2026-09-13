@@ -1,0 +1,939 @@
+{
+  "date": "2026-09-13",
+  "method": {
+    "date": "2026-09-13",
+    "kind": "paired_query_pilot_not_prompt_eval",
+    "reviewer": "current_assistant",
+    "blinded": false,
+    "independent_gold": false,
+    "transport": "same connected yargitay-local MCP for both arms; tool descriptions pre-0.3.1; binary version not independently observed",
+    "max_searches": 8,
+    "page": 1,
+    "page_size": 2,
+    "max_candidates_per_arm_source": 2,
+    "max_distinct_documents": 16,
+    "max_document_chars": 60000,
+    "max_get_calls_per_document": 3,
+    "chunk_chars": 20000,
+    "alternatives": false,
+    "automatic_pagination": false,
+    "retries_by_evaluator": false,
+    "order": [
+      "yargitay:old",
+      "yargitay:new",
+      "danistay:new",
+      "danistay:old",
+      "aym:old",
+      "aym:new",
+      "aihm:new",
+      "aihm:old"
+    ],
+    "questions": [
+      {
+        "id": "L1",
+        "source": "yargitay",
+        "criteria": "Signed unreserved payroll with overtime accrual; proof beyond payroll by witnesses addressed in court reasoning and disposition",
+        "old": {
+          "query": "fazla çalışma",
+          "unit": "9. Hukuk Dairesi",
+          "page": 1,
+          "page_size": 2
+        },
+        "new": {
+          "query": "imzalı ücret bordroları",
+          "unit": "9. Hukuk Dairesi",
+          "page": 1,
+          "page_size": 2
+        }
+      },
+      {
+        "id": "L2",
+        "source": "danistay",
+        "criteria": "Referral to tax assessment commission; purpose and effect on tax assessment limitation in court reasoning and disposition",
+        "old": {
+          "query": "takdir komisyonuna sevk",
+          "required_phrases": [
+            "zamanaşımı"
+          ],
+          "page": 1,
+          "page_size": 2
+        },
+        "new": {
+          "query": "zamanaşımını durdurmak",
+          "required_phrases": [
+            "takdir komisyonuna"
+          ],
+          "page": 1,
+          "page_size": 2
+        }
+      },
+      {
+        "id": "L3",
+        "source": "aym",
+        "criteria": "Public servant social media post disciplinary sanction with merits expression freedom necessity/proportionality review",
+        "old": {
+          "query": "sosyal medya",
+          "decision_type": "individual_application",
+          "page": 1,
+          "page_size": 2
+        },
+        "new": {
+          "query": "sosyal medya paylaşımları nedeniyle",
+          "decision_type": "individual_application",
+          "page": 1,
+          "page_size": 2
+        }
+      },
+      {
+        "id": "L4",
+        "source": "aihm",
+        "criteria": "Initial police questioning lawyer access restriction, resulting statement used in conviction, court overall fairness assessment",
+        "old": {
+          "query": "access to a lawyer",
+          "language": "ENG",
+          "decision_type": "judgments",
+          "page": 1,
+          "page_size": 2
+        },
+        "new": {
+          "query": "initial police questioning",
+          "language": "ENG",
+          "decision_type": "judgments",
+          "page": 1,
+          "page_size": 2
+        }
+      }
+    ]
+  },
+  "searches": [
+    {
+      "source": "yargitay",
+      "arm": "old",
+      "args": {
+        "query": "fazla çalışma",
+        "unit": "9. Hukuk Dairesi",
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:40:33.819267Z",
+      "filters": {
+        "page": 1,
+        "page_size": 2,
+        "query": "fazla çalışma",
+        "sort_by": "decision_date",
+        "sort_direction": "desc",
+        "unit": "9. Hukuk Dairesi"
+      },
+      "total": 56242,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "yargitay:1224717400",
+          "document_id": "1224717400",
+          "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1224717400",
+          "case_number": "2026/2266",
+          "decision_number": "2026/4307",
+          "decision_date": "2026-05-11",
+          "unit": "9. Hukuk Dairesi"
+        },
+        {
+          "rank": 2,
+          "document_key": "yargitay:1224719800",
+          "document_id": "1224719800",
+          "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1224719800",
+          "case_number": "2026/2743",
+          "decision_number": "2026/4308",
+          "decision_date": "2026-05-11",
+          "unit": "9. Hukuk Dairesi"
+        }
+      ]
+    },
+    {
+      "source": "yargitay",
+      "arm": "new",
+      "args": {
+        "query": "imzalı ücret bordroları",
+        "unit": "9. Hukuk Dairesi",
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:40:36.664685Z",
+      "filters": {
+        "page": 1,
+        "page_size": 2,
+        "query": "imzalı ücret bordroları",
+        "sort_by": "decision_date",
+        "sort_direction": "desc",
+        "unit": "9. Hukuk Dairesi"
+      },
+      "total": 3833,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "yargitay:1225329500",
+          "document_id": "1225329500",
+          "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1225329500",
+          "case_number": "2026/1454",
+          "decision_number": "2026/4124",
+          "decision_date": "2026-04-30",
+          "unit": "9. Hukuk Dairesi"
+        },
+        {
+          "rank": 2,
+          "document_key": "yargitay:1224768900",
+          "document_id": "1224768900",
+          "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1224768900",
+          "case_number": "2026/1182",
+          "decision_number": "2026/4027",
+          "decision_date": "2026-04-29",
+          "unit": "9. Hukuk Dairesi"
+        }
+      ]
+    },
+    {
+      "source": "danistay",
+      "arm": "new",
+      "args": {
+        "query": "zamanaşımını durdurmak",
+        "required_phrases": [
+          "takdir komisyonuna"
+        ],
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:40:42.513963Z",
+      "filters": {
+        "page": 1,
+        "page_size": 2,
+        "query": "zamanaşımını durdurmak",
+        "required_phrases": [
+          "takdir komisyonuna"
+        ]
+      },
+      "total": 508,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "danistay:1219577400",
+          "document_id": "1219577400",
+          "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1219577400",
+          "case_number": "2024/3528",
+          "decision_number": "2025/3711",
+          "application_number": null,
+          "decision_date": "2025-11-18",
+          "unit": "7. Daire",
+          "language": null
+        },
+        {
+          "rank": 2,
+          "document_key": "danistay:1219576200",
+          "document_id": "1219576200",
+          "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1219576200",
+          "case_number": "2024/3029",
+          "decision_number": "2025/3662",
+          "application_number": null,
+          "decision_date": "2025-11-17",
+          "unit": "7. Daire",
+          "language": null
+        }
+      ]
+    },
+    {
+      "source": "danistay",
+      "arm": "old",
+      "args": {
+        "query": "takdir komisyonuna sevk",
+        "required_phrases": [
+          "zamanaşımı"
+        ],
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:40:45.428052Z",
+      "filters": {
+        "page": 1,
+        "page_size": 2,
+        "query": "takdir komisyonuna sevk",
+        "required_phrases": [
+          "zamanaşımı"
+        ]
+      },
+      "total": 1269,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "danistay:1203795900",
+          "document_id": "1203795900",
+          "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1203795900",
+          "case_number": "2025/21",
+          "decision_number": "2026/1",
+          "application_number": null,
+          "decision_date": "2026-01-28",
+          "unit": "Vergi Dava Daireleri Kurulu",
+          "language": null
+        },
+        {
+          "rank": 2,
+          "document_key": "danistay:1218379600",
+          "document_id": "1218379600",
+          "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1218379600",
+          "case_number": "2024/5940",
+          "decision_number": "2025/5843",
+          "application_number": null,
+          "decision_date": "2025-12-23",
+          "unit": "3. Daire",
+          "language": null
+        }
+      ]
+    },
+    {
+      "source": "aym",
+      "arm": "old",
+      "args": {
+        "query": "sosyal medya",
+        "decision_type": "individual_application",
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:40:50.383553Z",
+      "filters": {
+        "decision_type": "individual_application",
+        "page": 1,
+        "page_size": 2,
+        "query": "sosyal medya"
+      },
+      "total": 579,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "aym:bb:6b2c2124-de5a-fea0-df6e-b884ba732eae",
+          "document_id": "bb:6b2c2124-de5a-fea0-df6e-b884ba732eae",
+          "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOjZiMmMyMTI0LWRlNWEtZmVhMC1kZjZlLWI4ODRiYTczMmVhZQ&type=BireyselBasvuru",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "2014/5376",
+          "decision_date": "2020-01-28",
+          "unit": "İkinci Bölüm",
+          "language": null
+        },
+        {
+          "rank": 2,
+          "document_key": "aym:bb:77493da5-cc87-4720-b1b6-b3326d3b992e",
+          "document_id": "bb:77493da5-cc87-4720-b1b6-b3326d3b992e",
+          "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOjc3NDkzZGE1LWNjODctNDcyMC1iMWI2LWIzMzI2ZDNiOTkyZQ&type=BireyselBasvuru",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "2023/71304",
+          "decision_date": "2025-10-01",
+          "unit": "İkinci Bölüm",
+          "language": null
+        }
+      ]
+    },
+    {
+      "source": "aym",
+      "arm": "new",
+      "args": {
+        "query": "sosyal medya paylaşımları nedeniyle",
+        "decision_type": "individual_application",
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:40:53.224739Z",
+      "filters": {
+        "decision_type": "individual_application",
+        "page": 1,
+        "page_size": 2,
+        "query": "sosyal medya paylaşımları nedeniyle"
+      },
+      "total": 42,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "aym:bb:8a53aca2-1ea2-8697-bdbd-c537086baad1",
+          "document_id": "bb:8a53aca2-1ea2-8697-bdbd-c537086baad1",
+          "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOjhhNTNhY2EyLTFlYTItODY5Ny1iZGJkLWM1MzcwODZiYWFkMQ&type=BireyselBasvuru",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "2017/36160",
+          "decision_date": "2022-03-02",
+          "unit": "İkinci Bölüm",
+          "language": null
+        },
+        {
+          "rank": 2,
+          "document_key": "aym:bb:fa4c7c32-ad18-a30c-de9e-5b97b3e315d3",
+          "document_id": "bb:fa4c7c32-ad18-a30c-de9e-5b97b3e315d3",
+          "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOmZhNGM3YzMyLWFkMTgtYTMwYy1kZTllLTViOTdiM2UzMTVkMw&type=BireyselBasvuru",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "2021/25429",
+          "decision_date": "2024-07-10",
+          "unit": "İkinci Bölüm",
+          "language": null
+        }
+      ]
+    },
+    {
+      "source": "aihm",
+      "arm": "new",
+      "args": {
+        "query": "initial police questioning",
+        "language": "ENG",
+        "decision_type": "judgments",
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:40:59.074172Z",
+      "filters": {
+        "decision_type": "judgments",
+        "language": "ENG",
+        "page": 1,
+        "page_size": 2,
+        "query": "initial police questioning"
+      },
+      "total": 11,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "aihm:001-235346",
+          "document_id": "001-235346",
+          "source_url": "https://hudoc.echr.coe.int/eng?i=001-235346",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "989/18",
+          "decision_date": "2024-08-27",
+          "unit": "6",
+          "language": "ENG"
+        },
+        {
+          "rank": 2,
+          "document_key": "aihm:001-172963",
+          "document_id": "001-172963",
+          "source_url": "https://hudoc.echr.coe.int/eng?i=001-172963",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "21980/04",
+          "decision_date": "2017-05-12",
+          "unit": "8",
+          "language": "ENG"
+        }
+      ]
+    },
+    {
+      "source": "aihm",
+      "arm": "old",
+      "args": {
+        "query": "access to a lawyer",
+        "language": "ENG",
+        "decision_type": "judgments",
+        "page": 1,
+        "page_size": 2
+      },
+      "error": false,
+      "fetched_at": "2026-09-13T13:41:02.583494Z",
+      "filters": {
+        "decision_type": "judgments",
+        "language": "ENG",
+        "page": 1,
+        "page_size": 2,
+        "query": "access to a lawyer"
+      },
+      "total": 545,
+      "candidates": [
+        {
+          "rank": 1,
+          "document_key": "aihm:001-252214",
+          "document_id": "001-252214",
+          "source_url": "https://hudoc.echr.coe.int/eng?i=001-252214",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "2170/24",
+          "decision_date": "2026-08-25",
+          "unit": "8",
+          "language": "ENG"
+        },
+        {
+          "rank": 2,
+          "document_key": "aihm:001-251027",
+          "document_id": "001-251027",
+          "source_url": "https://hudoc.echr.coe.int/eng?i=001-251027",
+          "case_number": null,
+          "decision_number": null,
+          "application_number": "31908/22",
+          "decision_date": "2026-07-07",
+          "unit": "5",
+          "language": "ENG"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "key": "yargitay:1224717400",
+      "source": "yargitay",
+      "document_id": "1224717400",
+      "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1224717400",
+      "content_sha256": "b8d6f4415dcfa6ac2d07409dbc383b7ebfa20afa0fa71deded79b1e5b4e5fcf3",
+      "fetched_at": "2026-09-13T13:41:08.943898Z",
+      "total_chars": 5259,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 5259,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 5259,
+      "access_error": false,
+      "status": "uncertain",
+      "reason": "V.B ve VI: genel çalışma süreleri/hesaplama ve onama var; imzalı, ihtirazi kayıtsız, fazla çalışma tahakkuklu bordroyu aşan miktarın tanıkla ispatına özgü olgular/gerekçe yok.",
+      "evidence_locations": "V.B Değerlendirme ve Gerekçe; VI Karar",
+      "checks": null
+    },
+    {
+      "key": "yargitay:1224719800",
+      "source": "yargitay",
+      "document_id": "1224719800",
+      "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1224719800",
+      "content_sha256": "25c02c6fcc0e27fc76ae3a9caa68f59ecc1535b6f68bb6dfe7603856659cb939",
+      "fetched_at": "2026-09-13T13:41:12.054884Z",
+      "total_chars": 3652,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 3652,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 3652,
+      "access_error": false,
+      "status": "uncertain",
+      "reason": "V.A.2'de ödeme/bordro taraf iddiası; V.B genel ispat ve hesaplama gerekçesiyle onama. İmza, ihtirazi kayıt ve fazla çalışma tahakkuku birlikte doğrulanmadı.",
+      "evidence_locations": "V.A.2; V.B; VI",
+      "checks": null
+    },
+    {
+      "key": "yargitay:1225329500",
+      "source": "yargitay",
+      "document_id": "1225329500",
+      "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1225329500",
+      "content_sha256": "affdeff5160f619cd729d7e728462abb190fa961b39b76513cbd59df47570a70",
+      "fetched_at": "2026-09-13T13:41:17.772959Z",
+      "total_chars": 12525,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 12525,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 12525,
+      "access_error": false,
+      "status": "uncertain",
+      "reason": "V.B.2 imzalı/ihtirazi kayıtsız bordro ve yazılı delil kuralını açıklıyor; ancak somut uygulama kaloriferci/kantin işinin süre hesabı ve eksik inceleme. Dar sorudaki bordro olgularının somut uyuşmazlıkta gerçekleştiği doğrulanmadı. Genel kuralı içermesi tek başına emsal uygunluğu sayılmadı.",
+      "evidence_locations": "V.B.2 genel ilkeler ve Somut olayda paragrafı; VI",
+      "checks": null
+    },
+    {
+      "key": "yargitay:1224768900",
+      "source": "yargitay",
+      "document_id": "1224768900",
+      "source_url": "https://karararama.yargitay.gov.tr/getDokuman?id=1224768900",
+      "content_sha256": "543db0f89a930b0effe35da339ec0d0c1c7c79f861bcf2081b9c0047a79d9d1c",
+      "fetched_at": "2026-09-13T13:41:20.741908Z",
+      "total_chars": 8248,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 8248,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 8248,
+      "access_error": false,
+      "status": "uncertain",
+      "reason": "İmzalı bordro tahakkuku somut olayda genel tatil ücretine ilişkin (III-IV); fazla çalışma tahakkuklu ihtirazi kayıtsız bordroyu aşan miktarın ispatı doğrulanmadı. V.B genel onama gerekçesi.",
+      "evidence_locations": "III-IV; V.B; VI",
+      "checks": null
+    },
+    {
+      "key": "danistay:1219577400",
+      "source": "danistay",
+      "document_id": "1219577400",
+      "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1219577400",
+      "content_sha256": "961199adb81859abc4bfb601b6969dc5e3a4161209b18c5aebcbf77cb00af1d9",
+      "fetched_at": "2026-09-13T13:41:30.087705Z",
+      "total_chars": 13139,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 13139,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 13139,
+      "access_error": false,
+      "status": "relevant",
+      "reason": "2017 ÖTV tarhiyatında, süreyi durdurma amacıyla 2022 sonunda takdire sevk ve 2023'te rapor/tebliğ inceleniyor. Çoğunluk, şekli sevkin süreyi aşma aracı yapılmasını kabul etmeyerek tarhiyatı zamanaşımı yönünden hukuka aykırı bulup kararı bozuyor. Karşı oy ayrıldı.",
+      "evidence_locations": "Hukuki Değerlendirme üç paragraf; Karar Sonucu 1-3; Karşı Oy",
+      "checks": {
+        "same_legal_issue": true,
+        "compatible_facts_and_legal_regime": true,
+        "court_reasoning_not_party_allegations": true,
+        "operative_holding_and_procedural_posture": true,
+        "concrete_text_support_for_each_conclusion": true
+      }
+    },
+    {
+      "key": "danistay:1219576200",
+      "source": "danistay",
+      "document_id": "1219576200",
+      "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1219576200",
+      "content_sha256": "89dd06046a435345fea55690d96d95c2fac47bacac19e1bfe3e95297a48ad606",
+      "fetched_at": "2026-09-13T13:41:33.148823Z",
+      "total_chars": 9680,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 9680,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 9680,
+      "access_error": false,
+      "status": "relevant",
+      "reason": "Ödeme emri davasında 2014 BSMV tarhiyatının süreyi durdurma amacıyla takdire sevki ve geç tebliği inceleniyor; çoğunluk 2014 kısmını tarh zamanaşımı nedeniyle bozuyor, 2015 kısmını onuyor. Tahsil aşamasında olsa da gerekçe doğrudan tarh zamanaşımına ilişkin.",
+      "evidence_locations": "Hukuki Değerlendirme 2014 dönemi paragrafları; Karar Sonucu 2-3; Karşı Oy",
+      "checks": {
+        "same_legal_issue": true,
+        "compatible_facts_and_legal_regime": true,
+        "court_reasoning_not_party_allegations": true,
+        "operative_holding_and_procedural_posture": true,
+        "concrete_text_support_for_each_conclusion": true
+      }
+    },
+    {
+      "key": "danistay:1203795900",
+      "source": "danistay",
+      "document_id": "1203795900",
+      "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1203795900",
+      "content_sha256": "76db24659520c16e5977f4fd9e82ec0f2d13e4d1b1134016f69c2fbeb3a09182",
+      "fetched_at": "2026-09-13T13:41:49.19721Z",
+      "total_chars": 36751,
+      "get_calls": 2,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        },
+        {
+          "offset": 20000,
+          "returned_chars": 16751,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 36751,
+      "access_error": false,
+      "status": "irrelevant",
+      "reason": "Uyuşmazlık, engelli murisin araç tescilinden önce ölümü halinde ÖTV istisnası ve mirasçılara tarhiyat. Zamanaşımı yalnız genel verginin kanuniliği listesinde; sevkin süreye etkisi hükmün konusu değil.",
+      "evidence_locations": "Özet; VI.B Hukuki Değerlendirme; VII Sonuç",
+      "checks": null
+    },
+    {
+      "key": "danistay:1218379600",
+      "source": "danistay",
+      "document_id": "1218379600",
+      "source_url": "https://karararama.danistay.gov.tr/getDokuman?arananKelime=&id=1218379600",
+      "content_sha256": "b39076b75020f21a81059aec792cf04eb9637c20e129611e9d2031d74907f53e",
+      "fetched_at": "2026-09-13T13:42:03.540866Z",
+      "total_chars": 34788,
+      "get_calls": 2,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        },
+        {
+          "offset": 20000,
+          "returned_chars": 14788,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 34788,
+      "access_error": false,
+      "status": "irrelevant",
+      "reason": "Uyuşmazlık avukatlar yönünden günlük hasılat tespiti genel tebliğinin iptali; çoğunluk davayı reddediyor. Takdire sevk ve zamanaşımı sözcükleri mevzuat/genel ilkelerde, aranan süreye etki uyuşmazlığında değil.",
+      "evidence_locations": "Davanın Konusu; Hukuki Değerlendirme; Karar Sonucu 1",
+      "checks": null
+    },
+    {
+      "key": "aym:bb:6b2c2124-de5a-fea0-df6e-b884ba732eae",
+      "source": "aym",
+      "document_id": "bb:6b2c2124-de5a-fea0-df6e-b884ba732eae",
+      "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOjZiMmMyMTI0LWRlNWEtZmVhMC1kZjZlLWI4ODRiYTczMmVhZQ&type=BireyselBasvuru",
+      "content_sha256": "31f4d1d454b7c78631deecbff75aaaea3800cf50f4caeb3b155b7d7f934d6c31",
+      "fetched_at": "2026-09-13T13:42:21.545951Z",
+      "total_chars": 44259,
+      "get_calls": 3,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        },
+        {
+          "offset": 20000,
+          "returned_chars": 20000,
+          "next_offset": 40000
+        },
+        {
+          "offset": 40000,
+          "returned_chars": 4259,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 44259,
+      "access_error": false,
+      "status": "irrelevant",
+      "reason": "Sosyal medya içeriklerine erişim engeli kararlarının uygulanmaması ve şeref/itibar hakkı inceleniyor; kamu görevlisinin kendi paylaşımı nedeniyle disiplin cezası değil.",
+      "evidence_locations": "§1, §26, §48-50; VI Hüküm",
+      "checks": null
+    },
+    {
+      "key": "aym:bb:77493da5-cc87-4720-b1b6-b3326d3b992e",
+      "source": "aym",
+      "document_id": "bb:77493da5-cc87-4720-b1b6-b3326d3b992e",
+      "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOjc3NDkzZGE1LWNjODctNDcyMC1iMWI2LWIzMzI2ZDNiOTkyZQ&type=BireyselBasvuru",
+      "content_sha256": "39007320bb67599c8b2fb9136732ea8ffcdd7f32ef5ce2e21578b2a91a963f8b",
+      "fetched_at": "2026-09-13T13:42:42.068837Z",
+      "total_chars": 21951,
+      "get_calls": 2,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        },
+        {
+          "offset": 20000,
+          "returned_chars": 1951,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 21951,
+      "access_error": false,
+      "status": "irrelevant",
+      "reason": "Gazetecinin başkasının videosunu paylaşması nedeniyle ceza mahkûmiyeti; ifade/basın özgürlüğü ihlali bulunmuş, ama kamu personeli disiplin rejimi değil.",
+      "evidence_locations": "§1-2, §12, §24-28; IV Hüküm",
+      "checks": null
+    },
+    {
+      "key": "aym:bb:8a53aca2-1ea2-8697-bdbd-c537086baad1",
+      "source": "aym",
+      "document_id": "bb:8a53aca2-1ea2-8697-bdbd-c537086baad1",
+      "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOjhhNTNhY2EyLTFlYTItODY5Ny1iZGJkLWM1MzcwODZiYWFkMQ&type=BireyselBasvuru",
+      "content_sha256": "f5351c77b315e57a0bc27003ae4e0202c21aa978e07b9350c52daecab6196eff",
+      "fetched_at": "2026-09-13T13:43:02.623703Z",
+      "total_chars": 5976,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 5976,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 5976,
+      "access_error": false,
+      "status": "irrelevant",
+      "reason": "Siyasi parti üyesinin hakaret suçundan hapis cezası; başvuru yolları tüketilmediğinden kabul edilemez. Kamu görevlisi disiplin yaptırımı ve esastan ölçülülük incelemesi yok.",
+      "evidence_locations": "§1, §5, §8, §16-17; V Hüküm",
+      "checks": null
+    },
+    {
+      "key": "aym:bb:fa4c7c32-ad18-a30c-de9e-5b97b3e315d3",
+      "source": "aym",
+      "document_id": "bb:fa4c7c32-ad18-a30c-de9e-5b97b3e315d3",
+      "source_url": "https://kararlarbilgibankasi.anayasa.gov.tr/kbb/pages/search/BireyselBasvuru?id=a2JiOmZhNGM3YzMyLWFkMTgtYTMwYy1kZTllLTViOTdiM2UzMTVkMw&type=BireyselBasvuru",
+      "content_sha256": "d156d20003d5b875964e719b2d777336c2bc9ed166de63e35dab1e70fdf9151a",
+      "fetched_at": "2026-09-13T13:43:09.550685Z",
+      "total_chars": 16076,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 16076,
+          "next_offset": null
+        }
+      ],
+      "full_text_read": true,
+      "read_chars": 16076,
+      "access_error": false,
+      "status": "irrelevant",
+      "reason": "Belediyede çalışan özel şirket taşeron işçisinin iş sözleşmesinin şüphe feshi; özel hukuk iş ilişkisi inceleniyor. Memur disiplin yaptırımıyla aynı rejim sayılmadı; ihlal bulunmaması eleme nedeni değil.",
+      "evidence_locations": "§2-4, §16-18, §22-23; III Hüküm",
+      "checks": null
+    },
+    {
+      "key": "aihm:001-235346",
+      "source": "aihm",
+      "document_id": "001-235346",
+      "source_url": "https://hudoc.echr.coe.int/eng?i=001-235346",
+      "content_sha256": "53b6f16e51a794207d796cec8d3f3d9d4568b8ace4b6a4da3ffc29722673d432",
+      "fetched_at": "2026-09-13T13:43:22.802749Z",
+      "total_chars": 115368,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        }
+      ],
+      "full_text_read": false,
+      "read_chars": 0,
+      "access_error": false,
+      "status": "not_assessed",
+      "reason": "Önceden belirlenen 60.000 karakterlik tam belge sınırını aşıyor. İlk 20.000 karakter araçtan alındı fakat modele gösterilmedi; içerik okunmadı, hukuki etiket verilmedi.",
+      "evidence_locations": null,
+      "checks": null
+    },
+    {
+      "key": "aihm:001-172963",
+      "source": "aihm",
+      "document_id": "001-172963",
+      "source_url": "https://hudoc.echr.coe.int/eng?i=001-172963",
+      "content_sha256": "dd210838c12f95103b0456d7b98cf45b949d9a27ef068ce1546f7eb4485e17d6",
+      "fetched_at": "2026-09-13T13:43:30.702399Z",
+      "total_chars": 245771,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        }
+      ],
+      "full_text_read": false,
+      "read_chars": 0,
+      "access_error": false,
+      "status": "not_assessed",
+      "reason": "Önceden belirlenen 60.000 karakterlik tam belge sınırını aşıyor. İlk 20.000 karakter araçtan alındı fakat modele gösterilmedi; içerik okunmadı, hukuki etiket verilmedi.",
+      "evidence_locations": null,
+      "checks": null
+    },
+    {
+      "key": "aihm:001-252214",
+      "source": "aihm",
+      "document_id": "001-252214",
+      "source_url": "https://hudoc.echr.coe.int/eng?i=001-252214",
+      "content_sha256": "5a387aafe7a4f4de48d9940523a1fbc33972ba604314199679f8227e4fb156b1",
+      "fetched_at": "2026-09-13T13:43:33.721907Z",
+      "total_chars": 315629,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        }
+      ],
+      "full_text_read": false,
+      "read_chars": 0,
+      "access_error": false,
+      "status": "not_assessed",
+      "reason": "Önceden belirlenen 60.000 karakterlik tam belge sınırını aşıyor. İlk 20.000 karakter araçtan alındı fakat modele gösterilmedi; içerik okunmadı, hukuki etiket verilmedi.",
+      "evidence_locations": null,
+      "checks": null
+    },
+    {
+      "key": "aihm:001-251027",
+      "source": "aihm",
+      "document_id": "001-251027",
+      "source_url": "https://hudoc.echr.coe.int/eng?i=001-251027",
+      "content_sha256": "cc9c940d3ac5365bf523aaf524a95daa0f058de1d87b9eac30b0ca70ba09892e",
+      "fetched_at": "2026-09-13T13:43:36.692741Z",
+      "total_chars": 229926,
+      "get_calls": 1,
+      "returned_ranges": [
+        {
+          "offset": 0,
+          "returned_chars": 20000,
+          "next_offset": 20000
+        }
+      ],
+      "full_text_read": false,
+      "read_chars": 0,
+      "access_error": false,
+      "status": "not_assessed",
+      "reason": "Önceden belirlenen 60.000 karakterlik tam belge sınırını aşıyor. İlk 20.000 karakter araçtan alındı fakat modele gösterilmedi; içerik okunmadı, hukuki etiket verilmedi.",
+      "evidence_locations": null,
+      "checks": null
+    }
+  ],
+  "metrics": [
+    {
+      "arm": "old",
+      "searches": 4,
+      "candidates": 8,
+      "full_text_read": 6,
+      "relevant": 0,
+      "irrelevant": 4,
+      "uncertain": 2,
+      "not_assessed": 2,
+      "access_errors": 0,
+      "confirmed_candidate_yield": 0,
+      "independently_validated_precision": null,
+      "recall": null
+    },
+    {
+      "arm": "new",
+      "searches": 4,
+      "candidates": 8,
+      "full_text_read": 6,
+      "relevant": 2,
+      "irrelevant": 2,
+      "uncertain": 2,
+      "not_assessed": 2,
+      "access_errors": 0,
+      "confirmed_candidate_yield": 0.25,
+      "independently_validated_precision": null,
+      "recall": null
+    }
+  ],
+  "limitations": [
+    "In-sample hand-selected shipped queries, not held-out prompt/model evaluation",
+    "Same non-blinded assistant selects and evaluates; no independent legal gold",
+    "Only top two per arm/source; no claim for all archive or general accuracy",
+    "HUDOC documents over predeclared limit unassessed, not irrelevant",
+    "Search totals not relevance metrics; filters differ only in query phrases incl Danistay AND phrasing",
+    "Connected binary version unobserved; both arms use same current connection"
+  ]
+}

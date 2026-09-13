@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "date": "2026-09-12",
+  "method": {
+    "mode": "author_self_check",
+    "reviewer": "current_assistant",
+    "blinded": false,
+    "independent_reviewer": false,
+    "external_ai_api": false,
+    "warning": "Örnekleri ve referans etiketlerini aynı asistan hazırladı; bu kayıt kör model performans testi değildir."
+  },
+  "predictions": [
+    {
+      "id": "T01",
+      "status": "relevant",
+      "present": true,
+      "reason": "Bordronun üç niteliği P1'de, tanığın yeterliliği P2'de ve bunun hükme etkisi P3'te açık.",
+      "evidence_paragraphs": [
+        "P2"
+      ],
+      "checks": {
+        "same_legal_issue": true,
+        "compatible_facts_and_legal_regime": true,
+        "court_reasoning_not_party_allegations": true,
+        "operative_holding_and_procedural_posture": true,
+        "concrete_text_support_for_each_conclusion": true
+      }
+    },
+    {
+      "id": "T02",
+      "status": "irrelevant",
+      "present": false,
+      "reason": "Mevcut karar yalnız kesinlik sınırını inceliyor; esasın ispat tartışması yapılmamış.",
+      "evidence_paragraphs": [
+        "P2"
+      ]
+    },
+    {
+      "id": "T03",
+      "status": "uncertain",
+      "present": false,
+      "reason": "Bordronun imza, ihtirazi kayıt ve tahakkuk koşulları bilinmiyor; genel onama bunu tamamlamaz.",
+      "evidence_paragraphs": [
+        "P2"
+      ]
+    },
+    {
+      "id": "T04",
+      "status": "relevant",
+      "present": true,
+      "reason": "Sevkin amacı ve tarh zamanaşımına etkisi incelenmiş, iptal sonucu buna dayandırılmış.",
+      "evidence_paragraphs": [
+        "P2"
+      ],
+      "checks": {
+        "same_legal_issue": true,
+        "compatible_facts_and_legal_regime": true,
+        "court_reasoning_not_party_allegations": true,
+        "operative_holding_and_procedural_posture": true,
+        "concrete_text_support_for_each_conclusion": true
+      }
+    },
+    {
+      "id": "T05",
+      "status": "irrelevant",
+      "present": false,
+      "reason": "Hüküm araç alımındaki istisna hakkında; kelimelerin geçmesi süre sorusunu yanıtlamıyor.",
+      "evidence_paragraphs": [
+        "P3"
+      ]
+    },
+    {
+      "id": "T06",
+      "status": "uncertain",
+      "present": false,
+      "reason": "Metin kesilmiş; mevcut mahkemenin gerekçesi ve sonucu yok.",
+      "evidence_paragraphs": [
+        "P3"
+      ]
+    },
+    {
+      "id": "T07",
+      "status": "relevant",
+      "present": true,
+      "reason": "Kamu görevlisi ve disiplin cezası hakkında aynı ifade özgürlüğü incelemesi yapılmış.",
+      "evidence_paragraphs": [
+        "P2"
+      ],
+      "checks": {
+        "same_legal_issue": true,
+        "compatible_facts_and_legal_regime": true,
+        "court_reasoning_not_party_allegations": true,
+        "operative_holding_and_procedural_posture": true,
+        "concrete_text_support_for_each_conclusion": true
+      }
+    },
+    {
+      "id": "T08",
+      "status": "irrelevant",
+      "present": false,
+      "reason": "Özel kişi/tutukluluk değerlendirmesi; kamu görevlisi disiplin yaptırımı sorusu değil.",
+      "evidence_paragraphs": [
+        "P2"
+      ]
+    },
+    {
+      "id": "T09",
+      "status": "uncertain",
+      "present": false,
+      "reason": "Belge alınamadığı için arama başlığı yeterli değil.",
+      "evidence_paragraphs": [
+        "P2"
+      ]
+    },
+    {
+      "id": "T10",
+      "status": "relevant",
+      "present": true,
+      "reason": "İlk sorguda avukat yokluğu, ifadenin mahkûmiyette kullanımı ve bütün yargılamanın hakkaniyeti birlikte incelenmiş.",
+      "evidence_paragraphs": [
+        "P2"
+      ],
+      "checks": {
+        "same_legal_issue": true,
+        "compatible_facts_and_legal_regime": true,
+        "court_reasoning_not_party_allegations": true,
+        "operative_holding_and_procedural_posture": true,
+        "concrete_text_support_for_each_conclusion": true
+      }
+    },
+    {
+      "id": "T11",
+      "status": "irrelevant",
+      "present": false,
+      "reason": "Hükümlünün görüşme gizliliği, ilk sorgu ifadesinin ceza delili olması sorusundan farklı.",
+      "evidence_paragraphs": [
+        "P2"
+      ]
+    },
+    {
+      "id": "T12",
+      "status": "uncertain",
+      "present": false,
+      "reason": "İnceleme ve hüküm henüz teslim edilmemiş.",
+      "evidence_paragraphs": [
+        "P2"
+      ]
+    },
+    {
+      "id": "T13",
+      "status": "irrelevant",
+      "present": false,
+      "reason": "Esasa girmeyen güncel hüküm, önceki derece kararının esas gerekçesiyle karıştırılamaz.",
+      "evidence_paragraphs": [
+        "P3"
+      ]
+    },
+    {
+      "id": "T14",
+      "status": "relevant",
+      "present": true,
+      "reason": "İhlal bulunmaması ilgisizlik değildir; aynı somut soru esastan incelenmiş.",
+      "evidence_paragraphs": [
+        "P2"
+      ],
+      "checks": {
+        "same_legal_issue": true,
+        "compatible_facts_and_legal_regime": true,
+        "court_reasoning_not_party_allegations": true,
+        "operative_holding_and_procedural_posture": true,
+        "concrete_text_support_for_each_conclusion": true
+      }
+    },
+    {
+      "id": "T15",
+      "status": "irrelevant",
+      "present": false,
+      "reason": "Esas görüşü yalnız karşı oyda; çoğunluk hükmü usulden ret.",
+      "evidence_paragraphs": [
+        "P3"
+      ]
+    },
+    {
+      "id": "T16",
+      "status": "irrelevant",
+      "present": false,
+      "reason": "Kaynak içi yönlendirmeyi talimat kabul etmiyorum; taşınmaz uyuşmazlığı ücret bordrosuyla ilgili değil.",
+      "evidence_paragraphs": [
+        "P2"
+      ]
+    }
+  ]
+}

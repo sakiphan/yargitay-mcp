@@ -1,0 +1,44 @@
+{
+  "method": {
+    "mode": "author_self_check",
+    "reviewer": "current_assistant",
+    "blinded": false,
+    "independent_reviewer": false,
+    "external_ai_api": false,
+    "warning": "Örnekleri ve referans etiketlerini aynı asistan hazırladı; bu kayıt kör model performans testi değildir."
+  },
+  "caveat": "Agreement with supplied labels only; not legal accuracy. Paragraph existence does not verify reasoning. No model was invoked by this scorer.",
+  "total": 16,
+  "exact_label_agreement": {
+    "correct": 16,
+    "total": 16,
+    "rate": 1
+  },
+  "presentation": {
+    "presented": 5,
+    "gold_relevant": 5,
+    "true_presented": 5,
+    "unsafe_presented": 0,
+    "precision": 1,
+    "recall": 1
+  },
+  "abstention_rate": 0.25,
+  "confusion_matrix": {
+    "relevant": {
+      "relevant": 5,
+      "irrelevant": 0,
+      "uncertain": 0
+    },
+    "irrelevant": {
+      "relevant": 0,
+      "irrelevant": 7,
+      "uncertain": 0
+    },
+    "uncertain": {
+      "relevant": 0,
+      "irrelevant": 0,
+      "uncertain": 4
+    }
+  },
+  "contract_violations": []
+}

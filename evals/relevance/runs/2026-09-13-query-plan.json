@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-13",
+  "kind": "paired_query_pilot_not_prompt_eval",
+  "reviewer": "current_assistant",
+  "blinded": false,
+  "independent_gold": false,
+  "transport": "same connected yargitay-local MCP for both arms; tool descriptions pre-0.3.1; binary version not independently observed",
+  "max_searches": 8,
+  "page": 1,
+  "page_size": 2,
+  "max_candidates_per_arm_source": 2,
+  "max_distinct_documents": 16,
+  "max_document_chars": 60000,
+  "max_get_calls_per_document": 3,
+  "chunk_chars": 20000,
+  "alternatives": false,
+  "automatic_pagination": false,
+  "retries_by_evaluator": false,
+  "order": [
+    "yargitay:old",
+    "yargitay:new",
+    "danistay:new",
+    "danistay:old",
+    "aym:old",
+    "aym:new",
+    "aihm:new",
+    "aihm:old"
+  ],
+  "questions": [
+    {
+      "id": "L1",
+      "source": "yargitay",
+      "criteria": "Signed unreserved payroll with overtime accrual; proof beyond payroll by witnesses addressed in court reasoning and disposition",
+      "old": {
+        "query": "fazla çalışma",
+        "unit": "9. Hukuk Dairesi",
+        "page": 1,
+        "page_size": 2
+      },
+      "new": {
+        "query": "imzalı ücret bordroları",
+        "unit": "9. Hukuk Dairesi",
+        "page": 1,
+        "page_size": 2
+      }
+    },
+    {
+      "id": "L2",
+      "source": "danistay",
+      "criteria": "Referral to tax assessment commission; purpose and effect on tax assessment limitation in court reasoning and disposition",
+      "old": {
+        "query": "takdir komisyonuna sevk",
+        "required_phrases": [
+          "zamanaşımı"
+        ],
+        "page": 1,
+        "page_size": 2
+      },
+      "new": {
+        "query": "zamanaşımını durdurmak",
+        "required_phrases": [
+          "takdir komisyonuna"
+        ],
+        "page": 1,
+        "page_size": 2
+      }
+    },
+    {
+      "id": "L3",
+      "source": "aym",
+      "criteria": "Public servant social media post disciplinary sanction with merits expression freedom necessity/proportionality review",
+      "old": {
+        "query": "sosyal medya",
+        "decision_type": "individual_application",
+        "page": 1,
+        "page_size": 2
+      },
+      "new": {
+        "query": "sosyal medya paylaşımları nedeniyle",
+        "decision_type": "individual_application",
+        "page": 1,
+        "page_size": 2
+      }
+    },
+    {
+      "id": "L4",
+      "source": "aihm",
+      "criteria": "Initial police questioning lawyer access restriction, resulting statement used in conviction, court overall fairness assessment",
+      "old": {
+        "query": "access to a lawyer",
+        "language": "ENG",
+        "decision_type": "judgments",
+        "page": 1,
+        "page_size": 2
+      },
+      "new": {
+        "query": "initial police questioning",
+        "language": "ENG",
+        "decision_type": "judgments",
+        "page": 1,
+        "page_size": 2
+      }
+    }
+  ]
+}
