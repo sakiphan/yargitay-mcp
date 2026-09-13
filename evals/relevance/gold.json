@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "label_origin": "assistant_authored_not_expert_validated",
+  "cases": [
+    {
+      "id": "T01",
+      "status": "relevant",
+      "rationale": "Aynı olgular ve ispat meselesi gerekçe ile hükme bağlanıyor.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T02",
+      "status": "irrelevant",
+      "rationale": "Anahtar kelimeler taraf iddiasında; mevcut karar esasa girmiyor.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T03",
+      "status": "uncertain",
+      "rationale": "Sorunun ayırt edici bordro koşulları açıklanmıyor.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T04",
+      "status": "relevant",
+      "rationale": "Sevk amacı ve süreye etkisi doğrudan nihai gerekçe.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T05",
+      "status": "irrelevant",
+      "rationale": "Sevk ve zamanaşımı kelimeleri var ama çözülen sorun başka.",
+      "evidence_paragraph": "P3"
+    },
+    {
+      "id": "T06",
+      "status": "uncertain",
+      "rationale": "Eksik metin; taraf iddiası hüküm yerine geçmez.",
+      "evidence_paragraph": "P3"
+    },
+    {
+      "id": "T07",
+      "status": "relevant",
+      "rationale": "İstenen kişi statüsü, yaptırım ve anayasal inceleme aynı dosyada.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T08",
+      "status": "irrelevant",
+      "rationale": "Kişi statüsü, yaptırım ve hukuki sorun farklı.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T09",
+      "status": "uncertain",
+      "rationale": "Arama başlığıyla hukuki uygunluk doğrulanamaz.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T10",
+      "status": "relevant",
+      "rationale": "İlk sorgu, ifade kullanımı ve yargılamanın hakkaniyeti birlikte incelenmiş.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T11",
+      "status": "irrelevant",
+      "rationale": "Avukat kelimesi aynı; inceleme farklı hak ve olay hakkında.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T12",
+      "status": "uncertain",
+      "rationale": "Gerekçe, delil kullanımı ve hüküm eksik.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T13",
+      "status": "irrelevant",
+      "rationale": "Aktarılan önceki gerekçe mevcut mahkemenin esasa ilişkin hükmü değildir.",
+      "evidence_paragraph": "P3"
+    },
+    {
+      "id": "T14",
+      "status": "relevant",
+      "rationale": "Aleyhe sonuç ilgisizlik değildir; istenen sorun esastan incelenmiş.",
+      "evidence_paragraph": "P2"
+    },
+    {
+      "id": "T15",
+      "status": "irrelevant",
+      "rationale": "Yalnız karşı oyda tartışılan konu çoğunluğun hükmü sayılamaz.",
+      "evidence_paragraph": "P3"
+    },
+    {
+      "id": "T16",
+      "status": "irrelevant",
+      "rationale": "Belge içi talimat güvenilmeyen veri; konu da açıkça farklı.",
+      "evidence_paragraph": "P2"
+    }
+  ]
+}
