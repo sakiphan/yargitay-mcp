@@ -1,0 +1,512 @@
+[
+  {
+    "label": "Hukuk Genel Kurulu",
+    "category": "boards",
+    "upstream_field": "birimYrgKurulDaire",
+    "upstream_value": "Hukuk Genel Kurulu",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "Ceza Genel Kurulu",
+    "category": "boards",
+    "upstream_field": "birimYrgKurulDaire",
+    "upstream_value": "Ceza Genel Kurulu",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "Ceza Daireleri Başkanlar Kurulu",
+    "category": "boards",
+    "upstream_field": "birimYrgKurulDaire",
+    "upstream_value": "Ceza Daireleri Başkanlar Kurulu",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "Hukuk Daireleri Başkanlar Kurulu",
+    "category": "boards",
+    "upstream_field": "birimYrgKurulDaire",
+    "upstream_value": "Hukuk Daireleri Başkanlar Kurulu",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "Büyük Genel Kurulu",
+    "category": "boards",
+    "upstream_field": "birimYrgKurulDaire",
+    "upstream_value": "Büyük Genel Kurulu",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "1. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "1. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "2. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "2. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "3. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "3. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "4. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "4. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "5. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "5. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "6. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "6. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "7. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "7. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "8. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "8. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "9. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "9. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "10. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "10. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "11. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "11. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "12. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "12. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "13. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "13. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "14. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "14. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "15. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "15. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "16. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "16. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "17. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "17. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "18. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "18. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "19. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "19. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "20. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "20. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "21. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "21. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "22. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "22. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "23. Hukuk Dairesi",
+    "category": "civil",
+    "upstream_field": "birimYrgHukukDaire",
+    "upstream_value": "23. Hukuk Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "1. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "1. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "2. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "2. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "3. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "3. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "4. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "4. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "5. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "5. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "6. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "6. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "7. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "7. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "8. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "8. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "9. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "9. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "10. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "10. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "11. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "11. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "12. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "12. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "13. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "13. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "14. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "14. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "15. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "15. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "16. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "16. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "17. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "17. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "18. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "18. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "19. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "19. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "20. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "20. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "21. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "21. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "22. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "22. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  },
+  {
+    "label": "23. Ceza Dairesi",
+    "category": "criminal",
+    "upstream_field": "birimYrgCezaDaire",
+    "upstream_value": "23. Ceza Dairesi",
+    "observed": true,
+    "active": null,
+    "source": "https://karararama.yargitay.gov.tr/",
+    "last_verified_at": "2026-09-09T12:07:49.355667+00:00"
+  }
+]
